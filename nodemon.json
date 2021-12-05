@@ -1,0 +1,10 @@
+{
+  "ignore": ["tmp", "temp", "vendor"],
+  "watch": ["api/", "main.go"],
+  "execMap": {
+    "go": "go run"
+  },
+  "env": {
+    "APP_ENV": "dev"
+  }
+}

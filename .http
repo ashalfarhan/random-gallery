@@ -1,0 +1,17 @@
+@BASE_URL = http://localhost:3000
+
+### Post an image
+POST {{BASE_URL}}/api/images
+Content-Type: application/json
+
+{
+    "url": "https://google.com",
+    "label": "new image"
+}
+
+### Remove an image
+DELETE {{BASE_URL}}/api/images/61abbe9c7ccc09a7bb796eeb
+
+
+### Get images
+GET {{BASE_URL}}/api/images?limit=1&page=20
