@@ -1,5 +1,11 @@
-on: [push, pull_request]
 name: CI
+
+on:
+  push:
+    branches: [$default-branch]
+  pull_request:
+    branches: [$default-branch]
+
 jobs:
   test:
     strategy:
@@ -15,8 +21,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Test
-        run: go test ./...
+        run: go test -v ./...
       - name: Build
         run: |
-          go build 
+          go build -v 
           go build -race
