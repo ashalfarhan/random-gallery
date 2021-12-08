@@ -28,9 +28,10 @@ func CreateImage(b io.ReadCloser) (*models.Image, error) {
 func GetAllImages(lim int, page int) ([]models.Image, error) {
 	v := validator.New()
 	err := v.Var(&lim, "gt=0,lt=25")
-	if err != nil {
 
+	if err != nil {
 		return nil, errors.New("limit must be gt 0 or lt 25")
 	}
+
 	return utils.GenerateRandomImages(lim), nil
 }
