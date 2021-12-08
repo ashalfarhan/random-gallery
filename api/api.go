@@ -6,17 +6,20 @@ import (
 	"time"
 
 	"github.com/ashalfarhan/gallery-api/api/controllers"
+	"github.com/rs/cors"
 )
 
 func Bootstrap() {
 	app := controllers.Server{}
 	app.Init()
+	c := cors.AllowAll()
 	server := &http.Server{
 		Addr:         app.Addr,
-		Handler:      app.Router,
+		Handler:      c.Handler(app.Router),
 		WriteTimeout: 15 * time.Second,
 		ReadTimeout:  10 * time.Second,
 	}
+
 	log.Printf("Listening on %v\n", app.Addr)
 	log.Fatal(server.ListenAndServe())
 }
