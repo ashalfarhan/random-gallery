@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/ashalfarhan/gallery-api/api/repository"
-	"github.com/ashalfarhan/gallery-api/api/responses"
+	"github.com/ashalfarhan/random-gallery/api/repository"
+	"github.com/ashalfarhan/random-gallery/api/responses"
 )
 
 func CreateImage(w http.ResponseWriter, r *http.Request) {

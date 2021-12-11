@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/ashalfarhan/gallery-api/api/responses"
+	"github.com/ashalfarhan/random-gallery/api/responses"
 )
 
 func TestDeleteImage(t *testing.T) {

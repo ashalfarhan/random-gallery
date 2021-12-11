@@ -5,8 +5,8 @@ import (
 	"errors"
 	"io"
 
-	"github.com/ashalfarhan/gallery-api/api/models"
-	"github.com/ashalfarhan/gallery-api/api/utils"
+	"github.com/ashalfarhan/random-gallery/api/models"
+	"github.com/ashalfarhan/random-gallery/api/utils"
 	"github.com/go-playground/validator/v10"
 	"github.com/google/uuid"
 )

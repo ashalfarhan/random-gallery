@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ashalfarhan/gallery-api/api/controllers"
+	"github.com/ashalfarhan/random-gallery/api/controllers"
 	"github.com/rs/cors"
 )
 

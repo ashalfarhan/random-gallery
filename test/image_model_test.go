@@ -3,7 +3,7 @@ package test
 import (
 	"testing"
 
-	"github.com/ashalfarhan/gallery-api/api/models"
+	"github.com/ashalfarhan/random-gallery/api/models"
 )
 
 func TestModelValidation(t *testing.T) {

@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ashalfarhan/gallery-api/api/models"
+	"github.com/ashalfarhan/random-gallery/api/models"
 	"github.com/google/uuid"
 	"syreclabs.com/go/faker"
 )
