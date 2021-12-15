@@ -5,13 +5,13 @@ go 1.17
 require (
 	github.com/go-playground/validator/v10 v10.9.0
 	github.com/google/uuid v1.3.0
+	github.com/gorilla/handlers v1.5.1
 	github.com/gorilla/mux v1.8.0
-	github.com/joho/godotenv v1.4.0
-	github.com/rs/cors v1.8.0
 	syreclabs.com/go/faker v1.2.3
 )
 
 require (
+	github.com/felixge/httpsnoop v1.0.1 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
 	github.com/go-playground/universal-translator v0.18.0 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
