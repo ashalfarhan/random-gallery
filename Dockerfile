@@ -12,10 +12,14 @@ RUN ["go", "mod", "download"]
 
 RUN ["go", "build", "-o", "./random-gallery"]
 
-CMD [ "./random-gallery" ]
+FROM alpine
 
-# FROM alpine
+WORKDIR /
 
-# WORKDIR /www
+COPY --from=builder ./app/random-gallery /bin
 
-# COPY --from=builder /app/random-gallery ./
+ENV PORT=8080
+
+EXPOSE 8080
+
+ENTRYPOINT [ "/bin/random-gallery" ]
