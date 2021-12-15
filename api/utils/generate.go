@@ -12,6 +12,7 @@ import (
 
 func GenerateRandomImages(len int) []models.Image {
 	images := make([]models.Image, len)
+
 	rand.Seed(time.Now().Unix())
 	for i := 0; i < len; i++ {
 		r := rand.Intn(240) - i
@@ -26,5 +27,6 @@ func GenerateRandomImages(len int) []models.Image {
 
 		images[i] = image
 	}
+
 	return images
 }
