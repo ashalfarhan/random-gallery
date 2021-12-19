@@ -2,3 +2,5 @@ vendor
 tmp
 temp
 .env*
+.air.toml
+fly.toml
